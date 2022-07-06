@@ -1,0 +1,377 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  --bg-color: #EDF2FF;
+  --text-color: #00082F;
+  --primary-color: #7bd5e4;
+  --primary-color-dark: #30b4cb;
+}
+
+a {
+  text-decoration: none;
+
+}
+
+.container{
+  text-align: center;
+  width: 400px;
+  margin: 60px auto;
+}
+h1 {
+  font-size: 32px;
+  margin-top: 24px;
+  margin-bottom: 8px;
+}
+
+body {
+  text-align: center;
+  background: var(--bg-color);
+  background-size: cover;
+  color: var(--text-color);
+  font-family: 'Roboto', sans-serif;
+}
+
+body.dark-blue {
+  --bg-color: #00082F;
+  --text-color: #FFFFFF;
+}
+
+body.pink {
+  --bg-color: #FFF0F6;
+  --text-color: #1F000B;
+  --primary-color: #D6336C;
+  --primary-color-dark: #A61E4D;
+}
+
+body.dark-pink {
+  --bg-color: #1F000B;
+  --text-color: #FFFFFF;
+  --primary-color: #D6336C;
+  --primary-color-dark: #A61E4D;
+}
+
+img.avatar {
+  margin-top: 10px;
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  padding: 3.7px;
+  border: 4px solid var(--primary-color); 
+}
+
+.username {
+  font-family: 'Roboto Mono', monospace;
+  font-weight: 400;
+  opacity: 0.8;
+  font-size: 18px;
+}
+img {
+  margin-top: 30px;
+  width: 100%;
+  max-width: 300px;
+  border-radius: 200px;
+  border: 3px solid rgb(0, 0, 0); 
+}
+
+.oi { 
+  list-style: none;
+  margin:  48px 0;
+  
+}
+
+ul { 
+  list-style: none;
+  width: 100%;
+  font-family: sans-serif;
+  font-size: 20px;
+}
+ul li a {
+  height: 53px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: var(--primary-color);
+  color: white;
+  text-transform: uppercase;
+  font-size: 14px;
+  margin-bottom: 16px;
+  border-radius: 6px;
+  transition: background 400ms;
+}
+
+svg {
+  color: var(--bg-color);
+  height: 1.5rem;
+  display: flex;
+  align-items: center;
+  padding: 0 .5rem;
+  border-radius: 0.25rem;
+  font: 200 .1rem;
+  transition: background 0.3s;
+}
+
+ul li a.novo {
+  height: 5px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: #ffffff;
+  color: white;
+  text-transform: uppercase;
+  font-size: 14px;
+  margin-bottom: 16px;
+  border-radius: 6px;
+  transition: background 400ms;
+}
+
+ul li a:hover{
+  background: var(--primary-color-dark);
+}
+
+ul li a.novo:hover{
+  background: #ffffff;
+}
+
+footer {
+  font-weight: 700;
+  font-size: 14px;
+  opacity: 0.6;
+}
+
+footer:hover{
+  opacity: 1;
+}
+
+footer a {
+  color: var(--text-color);
+}
+
+.wrapper {
+  height:  40px;
+  display: flex;
+  align-content: center;
+}
+
+.ty {
+  width: 28ch;
+  animation: typing 3.5s steps(40) infinite, blink .5s;
+  white-space: nowrap;
+  overflow: hidden;
+  border-right: 4px solid;
+  font-family: monospace;
+  font-size: 2em;
+}
+
+@keyframes typing {
+  from {
+    width: 0;
+  }
+}
+
+@keyframes blink {
+  50% {
+    border-color: transparent;
+  }
+}
+
+
+/*botão power-off */
+.slidecontainer {
+  width: 25%; /* Width of the outside container */
+  
+}
+
+/* The slider itself */
+.slider {
+  -webkit-appearance: none;  /* Override default CSS styles */
+  appearance: none;
+  width: 80%; /* Full-width */
+  height: 25px; /* Specified height */
+  background: var(--text-color); /* Grey background */
+  outline: none; /* Remove outline */
+  opacity: 0.7; /* Set transparency (for mouse-over effects on hover) */
+  -webkit-transition: .2s; /* 0.2 seconds transition on hover */
+  transition: opacity .2s;
+  border-radius: 20px;
+}
+
+/* Mouse-over effects */
+.slider:hover {
+  opacity: 1; /* Fully shown on mouse-over */
+}
+
+/* The slider handle (use -webkit- (Chrome, Opera, Safari, Edge) and -moz- (Firefox) to override default look) */
+.slider::-webkit-slider-thumb {
+  -webkit-appearance: none; /* Override default look */
+  appearance: none;
+  width: 25px; /* Set a specific slider handle width */
+  height: 25px; /* Slider handle height */
+  background: var(--primary-color); /* Green background */
+  cursor: pointer; /* Cursor on hover */
+  border-radius: 20px;
+}
+
+.slider::-moz-range-thumb {
+  width: 25px; /* Set a specific slider handle width */
+  height: 25px; /* Slider handle height */
+  background: var(--primary-color); /* Green background */
+  cursor: pointer; /* Cursor on hover */
+}
+
+
+/*começando novo */
+
+.foto{
+  margin-top: 0px;
+  margin-left: 0px;
+  width: 100%;
+  border-radius: 40px;
+  border: 3px solid rgb(255, 255, 255); 
+}
+
+.card{
+  width: 300px;
+  height: 400px;
+  background: rgb(255, 255, 255);
+  border-radius: 40px;
+  overflow: hidden;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  transition: all, 0.5s ease;
+  backface-visibility: hidden;
+  margin: auto;
+}
+
+.card:hover{
+  transform: scale(.9);
+}
+.card:hover:after{
+  height: 290px;
+}
+
+.card:hover .con-text p {
+  margin-bottom: 0px;
+  opacity: 1;
+}
+
+.card:hover img {
+  transform: scale(1.25);
+}
+
+.card:hover .ul {
+  transform: translate(0);
+  opacity: 1;
+}
+.card:after {
+  width: 100%;
+  content: '';
+  left: 0px;
+  bottom: 0px;
+  height: 150px;
+  position: absolute;
+  background: linear-gradient(180deg, rgba(255, 0, 0, 0) 0%, rgba(0,0,0,1) 100%);
+  z-index: 20;
+  transition: all, .25s ease;
+}
+.card .foto{
+  height: 100%;
+  z-index: 10;
+  transition: all, .25s ease;
+}
+
+.card .con-text {
+  z-index: 30;
+  position: absolute;
+  bottom: 0px;
+  color: rgb(255, 255, 255);
+  padding: 20px;
+  padding-bottom: 30px;
+}
+
+.card .con-text p {
+  font-size: .8rem;
+  opacity: 0;
+  margin-bottom: -170px;
+  transition: all, .25s ease;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  flex-direction: column;
+}
+
+.card .con-text p button {
+  padding: 7px 15px;
+  border-radius: 12px;
+  background: transparent;
+  border: 2px solid #fff;
+  color: #fff;
+  margin-top: 10px;
+  margin-left: auto;
+  cursor: pointer;
+  transition: all, .25s ease;
+  font-family: poppins;
+  font-size: .75rem;
+  outline: none;
+}
+
+.card .con-text p button:hover {
+  background: #fff;
+  color: #000;
+}
+
+.ul { 
+  position: absolute;
+  right: -100px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  z-index: 40;
+  border-radius: 14px;
+  padding-left: 0px;
+  padding-top: 8px;
+  padding-bottom: 8px;
+  top: 0px;
+  opacity: 0;
+  transform: translate(100%);
+  transition: all, .25s ease;
+}
+
+.ul li {
+  background: #fff;
+  list-style: none;
+  width: 40px;
+  height: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  opacity: .7;
+  transition: all, .25s ease;
+  backface-visibility: hidden;
+}
+
+.ul li:last-child {
+  border-radius: 0px 0px 12px 12px;
+}
+
+.ul li:first-child {
+  border-radius: 12px 12px 0px 0px;
+}
+
+.ul li:hover {
+  opacity: 1;
+  transform: translate(-7px, -4px);
+  border-radius: 6px;
+}
+
+.ul li i{
+  font-size: 1.2rem;
+  color: rgb(0, 0, 0);
+}

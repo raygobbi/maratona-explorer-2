@@ -1,0 +1,1 @@
+/*No futuro fazer a mudança de tema funcionar corretamente com o slide do tipo range, mudando entre essas body, body.dark-blue, body.pink, body.dark-pink */
