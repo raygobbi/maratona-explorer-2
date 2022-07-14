@@ -16,6 +16,19 @@ a {
 
 }
 
+.bt{
+  padding: 7px 15px;
+  border-radius: 12px;
+  background: var(--primary-color);
+  border: 2px solid var(--text-color);
+  color: var(--text-color);
+  margin-top: 10px;
+  margin-left: auto;
+  cursor: pointer;
+  font-family: poppins;
+  font-size: .75rem;
+}
+
 .container{
   text-align: center;
   width: 400px;
