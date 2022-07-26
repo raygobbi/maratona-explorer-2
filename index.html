@@ -12,10 +12,10 @@
     <link rel="stylesheet" href="./index.css">
   </head>
 
-  <body>
+  <body class="blue">
     <div class="slidecontainer">
-      <input type="range" min="1" max="4" value="2" class="slider" id="myRange">
-      <button class="bt" onclick="myFunction()">Dark-Blue</button> <button class="bt" onclick="myFunction1()">Pink</button> <button class="bt" onclick="myFunction2()">Dark-Pink</button>
+      <input type="range" min="0" max="3" value="0" class="slider" id="rangeValue" onchange="rangeSlide(this.value)" >
+      <!-- <button class="bt" onclick="myFunction()">Dark-Blue</button> <button class="bt" onclick="myFunction1()">Pink</button> <button class="bt" onclick="myFunction2()">Dark-Pink</button>-->
     </div>
     <div class="container">
       <img class="avatar" src="https://avatars.githubusercontent.com/u/86269533?v=4" alt="Foto de Ray S. Gobbi">
