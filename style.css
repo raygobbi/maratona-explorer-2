@@ -48,6 +48,10 @@ body {
   font-family: 'Roboto', sans-serif;
 }
 
+body.blue {
+  --bg-color: #EDF2FF;
+  --text-color: #00082F;
+}
 body.dark-blue {
   --bg-color: #00082F;
   --text-color: #FFFFFF;
